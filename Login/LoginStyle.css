@@ -4,6 +4,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: /*#f0f0f0*/ #dce6f1;
 }
 #box {
+    background-color: #eee0e0;
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30vh;
+    border-radius: 1vw;
+    border: solid #1e3964;
+}
+#box img {
+    position: fixed;
+    top: 32vh;
+}
+#label1 {
+    position: fixed;
+    top: 52vh;
+    left: 37vw;
+    color: #1e3964;
+}
+#label2 {
+    position: fixed;
+    top: 62vh;
+    left: 37vw;
+    color: #1e3964;
 }
