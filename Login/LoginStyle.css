@@ -4,8 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: /*#f0f0f0*/ #dce6f1;
+    background-color:
+        /*#f0f0f0*/
+        #dce6f1;
 }
+
 #box {
     background-color: #eee0e0;
     height: 50vh;
@@ -18,19 +21,96 @@ body {
     border-radius: 1vw;
     border: solid #1e3964;
 }
+
 #box img {
     position: fixed;
     top: 32vh;
 }
+
 #label1 {
     position: fixed;
     top: 52vh;
     left: 37vw;
     color: #1e3964;
 }
+
 #label2 {
     position: fixed;
     top: 62vh;
     left: 37vw;
     color: #1e3964;
+}
+
+#username {
+    position: fixed;
+    top: 55vh;
+    left: 36vw;
+    height: 3vh;
+    width: 28vw;
+    border: none;
+    border-bottom: 0.13vw solid #1e3964;
+    background-color: #eee0e0;
+    font-size: 1vw;
+}
+
+#password {
+    position: fixed;
+    top: 65vh;
+    left: 36vw;
+    height: 4vh;
+    width: 28.5vw;
+    border: none;
+    border-bottom: 0.13vw solid #1e3964;
+    font-size: 1vw;
+    background-color: #eee0e0;
+}
+
+#LoginB {
+    position: fixed;
+    top: 72vh;
+    right: 37vw;
+    height: 4vh;
+    width: 5vw;
+    background-color: transparent;
+    border: solid #1e3964;
+    color: #1e3964;
+    font-size: 2vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#LoginB:hover {
+    background-color: #1e3964;
+    color: #dce6f1;
+}
+
+#box a {
+    position: fixed;
+    top: 74vh;
+    right: 43vw;
+    color: #1e3964;
+    text-decoration: none;
+    cursor: default;
+}
+
+#username:focus {
+    border: none;
+    border-bottom: 0.13vw solid #5e7dad;
+    background-color: #eee0e0;
+    outline: none;
+}
+
+#password:focus {
+    border: none;
+    border-bottom: 0.13vw solid #5e7dad;
+    background-color: #eee0e0;
+    outline: none;
+}
+#ShowPassword {
+    position: fixed;
+    top: 65vh;
+    right: 36vw;
+    height: 4vh;
+    width: 2vw;
+    cursor: pointer;
 }
