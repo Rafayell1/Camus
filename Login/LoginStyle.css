@@ -4,9 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:
-        /*#f0f0f0*/
-        #dce6f1;
+    background-color: #dce6f1;
 }
 
 #box {
@@ -113,4 +111,29 @@ body {
     height: 4vh;
     width: 2vw;
     cursor: pointer;
+}
+/*Animação das notas de fundo*/
+#MusicNotes {
+    height: 100vh;
+    width: 100vw;
+}
+.nota_fundo {
+    height: 13vh;
+    width: 13vw;
+    position: relative;
+}
+.first_layer {
+    top: 6vh;
+}
+.second_layer {
+    top: 11vh;
+}
+.third_layer {
+    top: 16vh;
+}
+.fourth_layer {
+    top: 21vh;
+}
+.fifth_layer {
+    top: 26vh;
 }
