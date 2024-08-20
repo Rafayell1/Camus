@@ -1,10 +1,12 @@
 function mostrarSenha() {
   var senhaInput = document.getElementById("password");
   var tipoInput = senhaInput.getAttribute("type");
-
+  let ShowPassword = document.getElementById("ShowPassword");
   if (tipoInput === "password") {
     senhaInput.setAttribute("type", "text");
+    ShowPassword.style.backgroundImage = 'url("../img/Olho\ aberto.png")';
   } else {
     senhaInput.setAttribute("type", "password");
+    ShowPassword.style.backgroundImage = 'url("../img/Olho\ fechado.png")';
   }
 }

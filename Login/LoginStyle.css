@@ -41,7 +41,7 @@ body {
 
 #username {
     position: fixed;
-    top: 55vh;
+    top: 56vh;
     left: 36vw;
     height: 3vh;
     width: 28vw;
@@ -111,6 +111,12 @@ body {
     height: 4vh;
     width: 2vw;
     cursor: pointer;
+    background-image: url(../img/Olho\ fechado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
 }
 /*Animação das notas de fundo*/
 #MusicNotes {
