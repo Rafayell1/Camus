@@ -138,9 +138,9 @@ body {
 /*Background notes animation!!*/
 .first_layer {
     top: 4vh;
-    left: 00vw;
+    left: 0vw;
     transform: rotate(-15deg);
-    animation: rightAnimation 10s linear infinite, rotateAnimation 4s linear infinite;
+    animation: rotateAnimation 4s linear infinite;
     
 }
 @keyframes rotateAnimation {
@@ -158,13 +158,5 @@ body {
     }
     100% {
     transform: rotate(-15deg);
-    }
-}
-@keyframes rightAnimation {
-    from {
-        left: -100vw;
-    }
-    to {
-        left: 40vw;
     }
 }
