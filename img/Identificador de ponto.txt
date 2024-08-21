@@ -1,0 +1,59 @@
+HTML:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecção de Visibilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ponto-de-referencia" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: red; width: 10px; height: 10px;"></div>
+
+<div id="elemento" style="width: 100px; height: 100px; background-color: blue; position: absolute; top: 0; left: 0;"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------
+JS:
+// Seleciona o elemento que queremos observar
+const elemento = document.getElementById('elemento');
+
+// Seleciona o ponto de referência
+const pontoDeReferencia = document.getElementById('ponto-de-referencia');
+
+// Cria uma nova instância do IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+    // entries é um array de objetos, cada um representando um elemento observado.
+    // Aqui, estamos observando apenas um elemento, então pegamos o primeiro item do array.
+    const entry = entries[0];
+
+    // Se o elemento está visível dentro do ponto de referência, isIntersecting será true.
+    if (entry.isIntersecting) {
+        console.log('O elemento chegou ao ponto de referência!');
+        // Aqui você pode executar qualquer ação desejada quando o elemento chegar ao ponto de referência.
+    }
+}, {
+    // root é o elemento que define a área de visualização para o observador.
+    // Se não for especificado, o viewport do documento será usado.
+    root: null,
+
+    // rootMargin é uma string que especifica o tamanho da margem ao redor do root.
+    // Pode ser útil para detectar a visibilidade antes que o elemento esteja completamente visível.
+    rootMargin: '0px',
+
+    // threshold é um número ou um array de números que especifica a porcentagem de visibilidade que o callback deve ser executado.
+    // 1.0 significa que o callback será executado quando o elemento estiver completamente visível.
+    threshold: 1.0
+});
+
+// Inicia a observação do elemento
+observer.observe(pontoDeReferencia);
+
+// Para parar a observação, você pode usar:
+// observer.unobserve(elemento);
+
+// Para parar todas as observações do observer, use:
+// observer.disconnect();

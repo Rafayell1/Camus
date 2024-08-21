@@ -125,16 +125,21 @@ body {
 }
 .imgNotes {
     position: relative;
-    animation: rotateAnimation 4s linear infinite;
     margin: 2vh;
     margin-top: 0;
-    position: relative;
+    height: 15vh;
+}
+#firstLayerImages {
+    width: 200vw;
+    height: 20vh;
+    overflow: hidden;
 }
 .first_layer {
     top: 4vh;
-    left: -100vw;
+    left: 00vw;
     transform: rotate(-15deg);
-    animation: rightAnimation 20s linear infinite;
+    animation: rightAnimation 10s linear infinite, rotateAnimation 4s linear infinite;
+    
 }
 /*Background notes animation!!*/
 @keyframes rotateAnimation {
@@ -159,6 +164,6 @@ body {
         left: -100vw;
     }
     to {
-        left: 75vw;
+        left: 42vw;
     }
 }
