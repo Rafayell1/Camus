@@ -1,3 +1,4 @@
+//Altera o valor do input "senha" para mostrar ou ocultar o valor.
 function mostrarSenha() {
   var senhaInput = document.getElementById("password");
   var tipoInput = senhaInput.getAttribute("type");
@@ -10,3 +11,4 @@ function mostrarSenha() {
     ShowPassword.style.backgroundImage = 'url("../img/Olho\ fechado.png")';
   }
 }
+//Indentificador da localidade da imagem.

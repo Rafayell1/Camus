@@ -134,6 +134,8 @@ body {
     height: 20vh;
     overflow: hidden;
 }
+
+/*Background notes animation!!*/
 .first_layer {
     top: 4vh;
     left: 00vw;
@@ -141,7 +143,6 @@ body {
     animation: rightAnimation 10s linear infinite, rotateAnimation 4s linear infinite;
     
 }
-/*Background notes animation!!*/
 @keyframes rotateAnimation {
     0% {
     transform: rotate(-15deg);
@@ -164,6 +165,6 @@ body {
         left: -100vw;
     }
     to {
-        left: 42vw;
+        left: 40vw;
     }
 }
