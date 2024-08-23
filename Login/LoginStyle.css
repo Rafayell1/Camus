@@ -28,23 +28,23 @@ body {
 #label1 {
     position: fixed;
     top: 52vh;
-    left: 37vw;
+    left: 39.5vw;
     color: #1e3964;
 }
 
 #label2 {
     position: fixed;
-    top: 62vh;
-    left: 37vw;
+    top: 63vh;
+    left: 39.5vw;
     color: #1e3964;
 }
 
 #username {
     position: fixed;
     top: 56vh;
-    left: 36vw;
+    left: 39vw;
     height: 3vh;
-    width: 28vw;
+    width: 22vw;
     border: none;
     border-bottom: 0.13vw solid #1e3964;
     background-color: #eee0e0;
@@ -54,9 +54,9 @@ body {
 #password {
     position: fixed;
     top: 65vh;
-    left: 36vw;
+    left: 39vw;
     height: 4vh;
-    width: 28vw;
+    width: 22vw;
     border: none;
     border-bottom: 0.13vw solid #1e3964;
     font-size: 1vw;
@@ -88,7 +88,7 @@ body {
     right: 43vw;
     color: #1e3964;
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
 }
 
 #username:focus {
