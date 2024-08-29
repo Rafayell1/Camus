@@ -118,3 +118,18 @@ body {
     border: none;
     background-color: transparent;
 }
+/*Animações*/
+@keyframes rotação {
+    
+}
+
+/*Imagens*/
+.imagens {
+    height: 18vh;
+    width: 9vw;
+    position: relative;
+}
+#img1 {
+    top: 2vh;
+    right: 44vw;
+}
