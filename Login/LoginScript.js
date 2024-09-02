@@ -11,4 +11,3 @@ function mostrarSenha() {
     ShowPassword.style.backgroundImage = 'url("../img/Olho\ fechado.png")';
   }
 }
-//Indentificador da localidade da imagem.
