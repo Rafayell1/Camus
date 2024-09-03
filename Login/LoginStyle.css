@@ -118,4 +118,37 @@ body {
   border: none;
   background-color: transparent;
 }
+<<<<<<< HEAD
 /*Background video*/
+=======
+/*Animações*/
+@keyframes rotação {
+    0% {
+transform; rotate(15deg);
+}
+25% {
+transform; rotate(0deg);
+}
+50% {
+transform; rotate(-15deg);
+}
+75% {
+transform; rotate(0deg);
+}
+100% {
+transform; rotate(15deg);
+}
+}
+
+/*Imagens*/
+.imagens {
+    height: 18vh;
+    width: 9vw;
+    position: relative;
+}
+#img1 {
+    top: 2vh;
+    right: 44vw;
+    transform; rotate(15deg);
+}
+>>>>>>> 0cd814a3a3e9ef100b0f9ead9f8389c6f59cc1a1
