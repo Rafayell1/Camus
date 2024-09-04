@@ -138,9 +138,53 @@ transform: rotate(15deg);
 }
 #firstlayer {
   background-color: green;
-  width: 101vw;
+  width: 110vw;
+  height: 30vh;
 }
 /*Imagens*/
 .imgBackground {
     background-color: red;
+    position: relative;
+    /*transform: rotate(15deg);*/
+    height: 24vh;
+    width: 12vw;
+}
+.first_layer_img {
+  top: 3vh;
+  left: -105vw;
+}
+@keyframes right1 {
+  from {
+    left: -105vw;
+  }
+  to {
+    left: 110vw;
+  }
+}
+#img1L1 {
+  animation: right1 5s linear infinite;
+}
+#img2L1 {
+  animation: right1 5s linear infinite;
+}
+#img3L1 {
+  animation: right1 5s linear infinite;
+}
+#img4L1 {
+  animation: right1 5s linear infinite;
+}
+#img5L1 {
+  animation: right1 5s linear infinite;
+}
+#img6L1 {
+  animation: right1 5s linear infinite;
+}
+#img7L1 {
+  animation: right1 5s linear infinite;
+}
+#img8L1 {
+  animation: right1 5s linear infinite;
+}
+#img9L1 {
+  animation: right1 5s linear infinite;
 }

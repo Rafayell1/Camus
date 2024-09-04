@@ -10,4 +10,4 @@ function mostrarSenha() {
     senhaInput.setAttribute("type", "password");
     ShowPassword.style.backgroundImage = 'url("../img/Olho\ fechado.png")';
   }
-}
+};
